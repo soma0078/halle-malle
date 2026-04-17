@@ -144,6 +144,8 @@ export default function HomeScreen() {
       <ActivityBottomSheet
         activity={selectedActivity}
         onClose={() => setSelectedActivity(null)}
+        coords={coords ? { lat: coords.latitude, lon: coords.longitude } : null}
+        locationStatus={locationStatus}
       />
     </View>
   );

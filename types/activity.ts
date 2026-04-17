@@ -3,6 +3,8 @@ import { WeatherCondition } from "./weather";
 export interface ActivityPlace {
   name: string;
   address: string;
+  distance?: number; // 사용자로부터 몇 m (nearby일 때만)
+  source: "static" | "nearby";
 }
 
 export interface Activity {

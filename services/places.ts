@@ -9,7 +9,7 @@ import {
 export interface GetNearbyPlacesOptions {
   radius?: number; // 기본값 20000m (20km)
   size?: number; // 기본값 15
-  sort?: "accuracy" | "distance";
+  sort?: "accuracy" | "distance"; // 기본값 accuracy
 }
 
 /**
@@ -28,8 +28,8 @@ export async function getNearbyPlaces(
     query,
     y: lat.toString(),
     x: lon.toString(),
-    radius: options?.radius ?? 20000,
-    size: options?.size ?? 15,
+    radius: options?.radius,
+    size: options?.size,
     sort: options?.sort ?? "distance",
   };
 

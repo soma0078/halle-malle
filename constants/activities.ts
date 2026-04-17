@@ -11,7 +11,7 @@ const ACTIVITIES: Activity[] = [
     duration: '2~3시간',
     checklist: ['수영복', '선크림', '물놀이 튜브', '음료수', '타월'],
     condition: WEATHER_CONDITIONS.HOT_SUNNY,
-    place: { name: '뚝섬한강공원 수영장', address: '서울 광진구 강변북로 139' },
+    place: { name: '뚝섬한강공원 수영장', address: '서울 광진구 강변북로 139', source: 'static' },
   },
   {
     id: 'water_play',
@@ -21,7 +21,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~2시간',
     checklist: ['여벌 옷', '선크림', '물총', '음료수'],
     condition: WEATHER_CONDITIONS.HOT_SUNNY,
-    place: { name: '잠실한강공원 물놀이장', address: '서울 송파구 올림픽로 215' },
+    place: { name: '잠실한강공원 물놀이장', address: '서울 송파구 올림픽로 215', source: 'static' },
   },
   {
     id: 'icecream_tour',
@@ -31,7 +31,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~2시간',
     checklist: ['편한 신발', '지갑', '에코백'],
     condition: WEATHER_CONDITIONS.HOT_SUNNY,
-    place: { name: '연남동 골목', address: '서울 마포구 연남동' },
+    place: { name: '연남동 골목', address: '서울 마포구 연남동', source: 'static' },
   },
   // warm_sunny
   {
@@ -42,7 +42,7 @@ const ACTIVITIES: Activity[] = [
     duration: '2~4시간',
     checklist: ['돗자리', '도시락', '음료수', '선크림', '선글라스'],
     condition: WEATHER_CONDITIONS.WARM_SUNNY,
-    place: { name: '반포한강공원', address: '서울 서초구 신반포로11길 40' },
+    place: { name: '반포한강공원', address: '서울 서초구 신반포로11길 40', source: 'static' },
   },
   {
     id: 'cycling',
@@ -52,7 +52,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~3시간',
     checklist: ['자전거', '헬멧', '물병', '자전거 잠금장치'],
     condition: WEATHER_CONDITIONS.WARM_SUNNY,
-    place: { name: '한강 자전거길', address: '서울 영등포구 여의도한강공원' },
+    place: { name: '한강 자전거길', address: '서울 영등포구 여의도한강공원', source: 'static' },
   },
   {
     id: 'running',
@@ -62,7 +62,7 @@ const ACTIVITIES: Activity[] = [
     duration: '30분~1시간',
     checklist: ['운동화', '물병', '이어폰'],
     condition: WEATHER_CONDITIONS.WARM_SUNNY,
-    place: { name: '남산공원 산책로', address: '서울 중구 남산공원길 105' },
+    place: { name: '남산공원 산책로', address: '서울 중구 남산공원길 105', source: 'static' },
   },
   // cool_sunny
   {
@@ -73,7 +73,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~2시간',
     checklist: ['편한 신발', '얇은 겉옷'],
     condition: WEATHER_CONDITIONS.COOL_SUNNY,
-    place: { name: '선유도공원', address: '서울 영등포구 선유로 343' },
+    place: { name: '선유도공원', address: '서울 영등포구 선유로 343', source: 'static' },
   },
   {
     id: 'outdoor_cafe',
@@ -83,7 +83,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~2시간',
     checklist: ['책 or 노트북', '이어폰'],
     condition: WEATHER_CONDITIONS.COOL_SUNNY,
-    place: { name: '성수동 카페거리', address: '서울 성동구 성수동1가' },
+    place: { name: '성수동 카페거리', address: '서울 성동구 성수동1가', source: 'static' },
   },
   // cloudy
   {
@@ -94,7 +94,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~2시간',
     checklist: ['입장권 예매', '편한 신발'],
     condition: WEATHER_CONDITIONS.CLOUDY,
-    place: { name: '국립현대미술관 서울관', address: '서울 종로구 삼청로 30' },
+    place: { name: '국립현대미술관 서울관', address: '서울 종로구 삼청로 30', source: 'static' },
   },
   {
     id: 'indoor_sports',
@@ -104,7 +104,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~2시간',
     checklist: ['운동복', '운동화', '물병', '수건'],
     condition: WEATHER_CONDITIONS.CLOUDY,
-    place: { name: '서울 스포츠센터', address: '서울 중구 을지로 281' },
+    place: { name: '서울 스포츠센터', address: '서울 중구 을지로 281', source: 'static' },
   },
   {
     id: 'boardgame_cafe',
@@ -114,7 +114,7 @@ const ACTIVITIES: Activity[] = [
     duration: '2~4시간',
     checklist: ['친구', '지갑'],
     condition: WEATHER_CONDITIONS.CLOUDY,
-    place: { name: '홍대 보드게임 카페 거리', address: '서울 마포구 어울마당로' },
+    place: { name: '홍대 보드게임 카페 거리', address: '서울 마포구 어울마당로', source: 'static' },
   },
   // rainy
   {
@@ -125,7 +125,7 @@ const ACTIVITIES: Activity[] = [
     duration: '2~3시간',
     checklist: ['티켓 예매', '우산', '간식'],
     condition: WEATHER_CONDITIONS.RAINY,
-    place: { name: 'CGV 강남', address: '서울 강남구 강남대로 438' },
+    place: { name: 'CGV 강남', address: '서울 강남구 강남대로 438', source: 'static' },
   },
   {
     id: 'indoor_cafe',
@@ -135,7 +135,7 @@ const ACTIVITIES: Activity[] = [
     duration: '1~3시간',
     checklist: ['우산', '책 or 노트북', '이어폰'],
     condition: WEATHER_CONDITIONS.RAINY,
-    place: { name: '연남동 카페거리', address: '서울 마포구 연남동' },
+    place: { name: '연남동 카페거리', address: '서울 마포구 연남동', source: 'static' },
   },
   {
     id: 'reading',
@@ -145,7 +145,7 @@ const ACTIVITIES: Activity[] = [
     duration: '자유롭게',
     checklist: ['읽을 책', '따뜻한 음료'],
     condition: WEATHER_CONDITIONS.RAINY,
-    place: { name: '국립중앙도서관', address: '서울 서초구 반포대로 201' },
+    place: { name: '국립중앙도서관', address: '서울 서초구 반포대로 201', source: 'static' },
   },
 ];
 
