@@ -119,3 +119,7 @@ BottomSheet에서 권한을 재확인하지 않는다. 앱 시작 시 확정된 
 | 위치 허용 사용자에게 실질적으로 유용한 장소 제공 | 카카오 API 키 발급 및 환경변수 추가 필요          |
 | 정적 폴백으로 권한 거부 시에도 UX 유지           | 카드 탭 시 짧은 로딩 발생                         |
 | 1km 캐시 격자로 반복 요청 최소화                 | 키워드 매핑의 정확도가 활동명에 따라 다를 수 있음 |
+
+## 참고
+
+카카오 로컬 API: https://developers.kakao.com/docs/ko/local/dev-guide#search-by-keyword

@@ -47,7 +47,9 @@ export default function HomeScreen() {
     lon: coords?.longitude,
   });
 
-  const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
+  const [selectedActivity, setSelectedActivity] = useState<Activity | null>(
+    null,
+  );
 
   const condition = weather ? getWeatherCondition(weather) : "warm_sunny";
   const moodMessage = weather ? getMoodMessage(condition) : "";
